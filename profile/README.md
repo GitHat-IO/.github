@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- 3D Wave Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=230&section=header&text=GitHat&fontColor=ffffff&fontSize=90&fontAlignY=32&desc=Identity%20Infrastructure%20for%20Modern%20Apps&descSize=22&descAlignY=56&descColor=58a6ff&animation=fadeIn&stroke=58a6ff&strokeWidth=1" width="100%" alt="GitHat"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=230&section=header&text=GitHat&fontColor=ffffff&fontSize=90&fontAlignY=32&desc=Fintech%20Developer%20Platform%20%7C%20Replaces%20Supabase%20%2B%20Vercel%20%2B%20Clerk&descSize=22&descAlignY=56&descColor=58a6ff&animation=fadeIn&stroke=58a6ff&strokeWidth=1" width="100%" alt="GitHat"/>
 
 <br/>
 
@@ -12,7 +12,7 @@
 
 <!-- Animated Typing -->
 <a href="https://githat.io">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=Authentication+%C2%B7+Organizations+%C2%B7+Teams;Ship+identity+in+minutes%2C+not+months." alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=Auth+%C2%B7+Database+%C2%B7+Hosting+%C2%B7+Deploy;Replaces+Supabase+%2B+Vercel+%2B+Clerk" alt="Typing SVG"/>
 </a>
 
 <br/>
@@ -40,7 +40,7 @@
 
 ## What is GitHat?
 
-**GitHat** is your backend — a complete hosted platform for auth, organizations, teams, API keys, MCP server verification, and AI agent identity. Drop in the SDK, run the CLI, and ship. Sign-up, sign-in, email verification, multi-org switching, role-based access, API key management, MCP registration, and agent wallets all work out of the box. **No backend to deploy.**
+**GitHat** is a fintech developer platform that replaces **Supabase + Vercel + Clerk**. Auth, managed DynamoDB database, serverless Lambda compute, and slug-based hosting at `slug.githat.io`. Drop in the SDK, run `githat deploy`, and ship. Built for students and builders who need to deploy for real. **Stop testing. Start shipping.**
 
 ```bash
 npx create-githat-app my-app
