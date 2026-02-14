@@ -40,7 +40,7 @@
 
 ## What is GitHat?
 
-**GitHat** provides complete identity infrastructure so you can add authentication, organization management, and team collaboration to any app in minutes. Drop in the SDK, run the CLI, and ship — sign-up, sign-in, email verification, multi-org switching, role-based access, and API key management all work out of the box.
+**GitHat** is your backend — a complete hosted platform for auth, organizations, teams, API keys, MCP server verification, and AI agent identity. Drop in the SDK, run the CLI, and ship. Sign-up, sign-in, email verification, multi-org switching, role-based access, API key management, MCP registration, and agent wallets all work out of the box. **No backend to deploy.**
 
 ```bash
 npx create-githat-app my-app
@@ -144,7 +144,7 @@ npx create-githat-app my-app
  ║           │                        │                ║
  ╠═══════════╧════════════════════════╧════════════════╣
  ║                  api.githat.io                      ║
- ║            API Gateway + 49 Lambdas                 ║
+ ║            API Gateway + 50 Lambdas                 ║
  ╠══════════════════════════════════════════════════════╣
  ║   DynamoDB (9 tables)  │   SES    │   CloudWatch   ║
  ╚══════════════════════════════════════════════════════╝
