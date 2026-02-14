@@ -1,16 +1,27 @@
 <div align="center">
 
 <!-- 3D Wave Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=230&section=header&text=GitHat&fontColor=ffffff&fontSize=90&fontAlignY=32&desc=Identity%20Infrastructure%20for%20Modern%20Apps&descSize=22&descAlignY=56&descColor=58a6ff&animation=fadeIn&stroke=58a6ff&strokeWidth=1" width="100%" alt="GitHat"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=200&section=header&fontSize=1&animation=fadeIn" width="100%" alt=""/>
 
 <br/>
+
+<!-- 3D Logo -->
+<img src="githat-logo-3d.svg" width="220" alt="GitHat Logo"/>
+
+<br/><br/>
 
 <!-- Animated Typing -->
 <a href="https://githat.io">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=Authentication+%C2%B7+Organizations+%C2%B7+Teams;Ship+identity+in+minutes%2C+not+months." alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&repeat=true&width=500&height=45&lines=GitHat" alt="GitHat"/>
 </a>
 
 <br/>
+
+<a href="https://githat.io">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=400&size=18&duration=3000&pause=1000&color=8B949E&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=60&lines=Identity+Infrastructure+for+Modern+Apps;Authentication+%C2%B7+Organizations+%C2%B7+Teams" alt="Tagline"/>
+</a>
+
+<br/><br/>
 
 <!-- Badges -->
 <a href="https://www.npmjs.com/package/@githat/nextjs">
@@ -22,7 +33,7 @@
 </a>
 &nbsp;
 <a href="https://githat.io">
-  <img src="https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fgithat.io&up_message=live&up_color=1f6feb&label=githat.io&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMiIgeTE9IjEyIiB4Mj0iMjIiIHkyPSIxMiIvPjxwYXRoIGQ9Ik0xMiAyYTE1LjMgMTUuMyAwIDAgMSA0IDEwIDE1LjMgMTUuMyAwIDAgMS00IDEwIDE1LjMgMTUuMyAwIDAgMS00LTEwIDE1LjMgMTUuMyAwIDAgMSA0LTEweiIvPjwvc3ZnPg==" alt="Website"/>
+  <img src="https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fgithat.io&up_message=live&up_color=1f6feb&label=githat.io" alt="Website"/>
 </a>
 
 </div>
@@ -123,26 +134,26 @@ npx create-githat-app my-app
 ## Architecture
 
 ```text
- ╔══════════════════════════════════════════════════════╗
- ║                    githat.io                        ║
- ║               CloudFront + S3                       ║
- ╠══════════════════════════════════════════════════════╣
- ║                                                     ║
- ║   @githat/nextjs SDK             Dashboard          ║
- ║   ┌────────────────┐      ┌───────────────────┐    ║
- ║   │  SignInForm     │      │  User Management  │    ║
- ║   │  SignUpForm     │      │  Org Settings     │    ║
- ║   │  UserButton     │      │  Team Invites     │    ║
- ║   │  OrgSwitcher    │      │  API Keys         │    ║
- ║   │  Middleware     │      │  Billing           │    ║
- ║   └───────┬────────┘      └────────┬──────────┘    ║
- ║           │                        │                ║
- ╠═══════════╧════════════════════════╧════════════════╣
- ║                  api.githat.io                      ║
- ║            API Gateway + 49 Lambdas                 ║
- ╠══════════════════════════════════════════════════════╣
- ║   DynamoDB (9 tables)  │   SES    │   CloudWatch   ║
- ╚══════════════════════════════════════════════════════╝
+ +=====================================================+
+ |                    githat.io                        |
+ |               CloudFront + S3                       |
+ +=====================================================+
+ |                                                     |
+ |   @githat/nextjs SDK             Dashboard          |
+ |   +----------------+      +-------------------+    |
+ |   |  SignInForm     |      |  User Management  |    |
+ |   |  SignUpForm     |      |  Org Settings     |    |
+ |   |  UserButton     |      |  Team Invites     |    |
+ |   |  OrgSwitcher    |      |  API Keys         |    |
+ |   |  Middleware     |      |  Billing           |    |
+ |   +-------+--------+      +--------+----------+    |
+ |           |                        |                |
+ +===========+========================+================+
+ |                  api.githat.io                      |
+ |            API Gateway + 49 Lambdas                 |
+ +=====================================================+
+ |   DynamoDB (9 tables)  |   SES    |   CloudWatch   |
+ +=====================================================+
 ```
 
 <br/>
@@ -212,7 +223,7 @@ export default function App({ children }) {
 <br/><br/>
 
 <!-- 3D Wave Footer -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,50:161b22,100:0d1117&height=130&section=footer&animation=fadeIn" width="100%" alt="Footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,50:161b22,100:0d1117&height=120&section=footer&animation=fadeIn" width="100%" alt=""/>
 
 **&copy; 2026 GitHat Inc. All rights reserved.**
 
