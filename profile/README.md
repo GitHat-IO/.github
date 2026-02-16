@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- 3D Wave Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=230&section=header&text=GitHat&fontColor=ffffff&fontSize=90&fontAlignY=32&desc=Fintech%20Developer%20Platform%20%7C%20Replaces%20Supabase%20%2B%20Vercel%20%2B%20Clerk&descSize=22&descAlignY=56&descColor=58a6ff&animation=fadeIn&stroke=58a6ff&strokeWidth=1" width="100%" alt="GitHat"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=230&section=header&text=GitHat&fontColor=ffffff&fontSize=90&fontAlignY=32&desc=Auth%20%2B%20Hosting%20%7C%20Replaces%20Clerk%20%2B%20Vercel&descSize=22&descAlignY=56&descColor=58a6ff&animation=fadeIn&stroke=58a6ff&strokeWidth=1" width="100%" alt="GitHat"/>
 
 <br/>
 
@@ -12,7 +12,7 @@
 
 <!-- Animated Typing -->
 <a href="https://githat.io">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=Auth+%C2%B7+Database+%C2%B7+Hosting+%C2%B7+Deploy;Replaces+Supabase+%2B+Vercel+%2B+Clerk" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=Auth+%C2%B7+Hosting+%C2%B7+Bring+Your+Own+Database;Replaces+Clerk+%2B+Vercel" alt="Typing SVG"/>
 </a>
 
 <br/>
@@ -40,7 +40,7 @@
 
 ## What is GitHat?
 
-**GitHat** is a fintech developer platform that replaces **Supabase + Vercel + Clerk**. Auth, managed DynamoDB database, serverless Lambda compute, and slug-based hosting at `slug.githat.io`. Drop in the SDK, run `githat deploy`, and ship. Built for students and builders who need to deploy for real. **Stop testing. Start shipping.**
+**GitHat** is an auth + hosting platform that replaces **Clerk + Vercel**. Pre-built sign-in UI, JWT tokens for your API, and slug-based hosting at `slug.githat.io`. **Bring your own PostgreSQL, MySQL, or MongoDB** — GitHat handles auth, you keep your database. Built for students and builders who deploy for real. **Stop testing. Start shipping.**
 
 ```bash
 npx create-githat-app my-app
