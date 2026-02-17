@@ -67,13 +67,14 @@ npx create-githat-app my-app
       <ul>
         <li><code>&lt;SignInForm /&gt;</code> &mdash; branded sign-in</li>
         <li><code>&lt;SignUpForm /&gt;</code> &mdash; registration + email verify</li>
+        <li><code>&lt;ForgotPasswordForm /&gt;</code> &mdash; password reset</li>
         <li><code>&lt;UserButton /&gt;</code> &mdash; avatar dropdown</li>
         <li><code>&lt;OrgSwitcher /&gt;</code> &mdash; multi-org selector</li>
         <li><code>useAuth()</code> &mdash; session state hook</li>
-        <li><code>useOrg()</code> &mdash; organization context hook</li>
-        <li>Next.js middleware &mdash; route protection</li>
+        <li><code>useData()</code> &mdash; Customer Data API</li>
+        <li>Server-side auth &mdash; <code>verifyToken()</code>, <code>withAuth()</code></li>
+        <li>Next.js 14-16 middleware/proxy</li>
         <li>Auto token refresh &mdash; seamless sessions</li>
-        <li>CSS theme &mdash; <code>@githat/nextjs/styles</code></li>
       </ul>
     </td>
     <td width="50%" valign="top">
@@ -85,8 +86,9 @@ npx create-githat-app my-app
       </p>
       <p>Interactive CLI that scaffolds a complete project.</p>
       <ul>
-        <li>Next.js 14+ App Router template</li>
+        <li>Next.js 14-16 App Router template</li>
         <li>Auth pages &mdash; sign-in, sign-up, verify</li>
+        <li>Password reset flow</li>
         <li>Protected dashboard layout</li>
         <li>API client with retry logic</li>
         <li>Organization management UI</li>
@@ -139,14 +141,14 @@ npx create-githat-app my-app
  ║   │  SignUpForm     │      │  Org Settings     │    ║
  ║   │  UserButton     │      │  Team Invites     │    ║
  ║   │  OrgSwitcher    │      │  API Keys         │    ║
- ║   │  Middleware     │      │  Billing           │    ║
+ ║   │  Middleware     │      │  Billing          │    ║
  ║   └───────┬────────┘      └────────┬──────────┘    ║
  ║           │                        │                ║
  ╠═══════════╧════════════════════════╧════════════════╣
  ║                  api.githat.io                      ║
- ║            API Gateway + 50 Lambdas                 ║
+ ║            API Gateway + 62 Lambdas                 ║
  ╠══════════════════════════════════════════════════════╣
- ║   DynamoDB (9 tables)  │   SES    │   CloudWatch   ║
+ ║   DynamoDB (10 tables) │   SES    │   CloudWatch   ║
  ╚══════════════════════════════════════════════════════╝
 ```
 
