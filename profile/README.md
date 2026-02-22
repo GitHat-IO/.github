@@ -69,9 +69,47 @@ Next.js 14-16 App Router • Auth pages • Password reset • Dashboard • Tea
 
 ---
 
+---
+
+### Documentation
+
+[Quick Start](https://githat.io/docs/quickstart) •
+[SDK Reference](https://githat.io/docs/sdk) •
+[API Reference](https://githat.io/docs/api) •
+[CLI](https://githat.io/docs/cli) •
+[MCP Servers](https://githat.io/docs/mcp) •
+[AI Agents](https://githat.io/docs/agents) •
+[BYOD](https://githat.io/docs/byod) •
+[Customer Data API](https://githat.io/docs/data) •
+[Skills Marketplace](https://githat.io/docs/skills)
+
+**Framework Guides:**
+[Next.js](https://githat.io/docs/nextjs) •
+[React](https://githat.io/docs/react) •
+[Node.js](https://githat.io/docs/node) •
+[Python](https://githat.io/docs/python) •
+[Flask](https://githat.io/docs/flask) •
+[FastAPI](https://githat.io/docs/fastapi)
+
+**Tutorials:**
+[Next.js Auth Guide](https://githat.io/guides/nextjs-authentication) •
+[React Auth Guide](https://githat.io/guides/react-authentication) •
+[Node.js Auth Guide](https://githat.io/guides/node-authentication) •
+[Multi-Tenant Auth](https://githat.io/guides/multi-tenant-auth) •
+[Clerk Migration](https://githat.io/docs/clerk-migration)
+
+**Compare:**
+[vs Clerk](https://githat.io/compare/githat-vs-clerk) •
+[vs Auth0](https://githat.io/compare/githat-vs-auth0) •
+[vs Firebase](https://githat.io/compare/githat-vs-firebase) •
+[vs Supabase](https://githat.io/compare/githat-vs-supabase) •
+[vs Vercel](https://githat.io/compare/githat-vs-vercel)
+
+---
+
 <div align="center">
 
-[Website](https://githat.io) • [SDK](https://www.npmjs.com/package/@githat/nextjs) • [CLI](https://www.npmjs.com/package/create-githat-app) • [Docs](https://githat.io/docs)
+[Website](https://githat.io) • [Pricing](https://githat.io/pricing) • [Docs](https://githat.io/docs) • [SDK](https://www.npmjs.com/package/@githat/nextjs) • [CLI](https://www.npmjs.com/package/create-githat-app)
 
 © 2026 GitHat Inc.
 
