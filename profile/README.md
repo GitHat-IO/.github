@@ -53,7 +53,7 @@ Next.js 14-16 App Router • Auth pages • Password reset • Dashboard • Tea
 
 **API:** api.githat.io — 86 Lambda functions
 
-**Database:** DynamoDB (16 tables)
+**Database:** DynamoDB (17 tables)
 
 **Email:** SES (noreply@githat.io)
 
