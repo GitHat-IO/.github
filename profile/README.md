@@ -51,9 +51,9 @@ Next.js 14-16 App Router • Auth pages • Password reset • Dashboard • Tea
 
 **Frontend:** CloudFront + S3 at githat.io
 
-**API:** api.githat.io — 95 Lambda functions
+**API:** api.githat.io — serverless functions
 
-**Database:** DynamoDB (18 tables)
+**Database:** DynamoDB
 
 **Email:** SES (noreply@githat.io)
 
