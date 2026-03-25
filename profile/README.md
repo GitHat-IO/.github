@@ -77,7 +77,6 @@ Next.js 14-16 App Router • Auth pages • Password reset • Dashboard • Tea
 [SDK Reference](https://githat.io/docs/sdk) •
 [API Reference](https://githat.io/docs/api) •
 [CLI](https://githat.io/docs/cli) •
-[MCP Servers](https://githat.io/docs/mcp) •
 [AI Agents](https://githat.io/docs/agents) •
 [BYOD](https://githat.io/docs/byod) •
 [Customer Data API](https://githat.io/docs/data) •
