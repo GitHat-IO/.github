@@ -2,114 +2,58 @@
 
 # GitHat
 
-**Auth + Hosting • Replaces Clerk + Vercel**
+**The clerk at the door of your app.**
 
-[![SDK](https://img.shields.io/npm/v/@githat/nextjs?style=flat-square&logo=npm&logoColor=white&label=%40githat%2Fnextjs&color=cb3837)](https://www.npmjs.com/package/@githat/nextjs)
-[![CLI](https://img.shields.io/npm/v/create-githat-app?style=flat-square&logo=npm&logoColor=white&label=create-githat-app&color=cb3837)](https://www.npmjs.com/package/create-githat-app)
-[![Website](https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fgithat.io&up_message=live&up_color=1f6feb&label=githat.io)](https://githat.io)
+Auth + hosting that replaces Clerk + Vercel. Bring your own database.
+
+[**🌐 githat.io**](https://githat.io)&nbsp;&nbsp;·&nbsp;&nbsp;[**📦 npx create-githat-app**](https://github.com/GitHat-IO/create-githat-app)&nbsp;&nbsp;·&nbsp;&nbsp;[**🔌 api.githat.io**](https://api.githat.io)
 
 </div>
 
 ---
 
-Pre-built sign-in UI • JWT tokens • Slug-based hosting at `slug.githat.io` • **Bring your own database**
+## What GitHat is
+
+GitHat is an identity + edge platform for SaaS apps that don't want to glue 10 vendors together. One install gives you:
+
+- **Auth** — RS256 JWTs signed by AWS KMS, sessions in httpOnly cookies, audit-trail to a SOC2-compliant WORM bucket
+- **Hosting** — Route 53 → CloudFront (ACM cert auto-rotation) → EC2 with Caddy + Node
+- **SDK** — `@githat/nextjs` works in App Router, RSC, and middleware
+- **Multi-app platform** — One auth surface, many apps under it (see the constellation below)
+
+## The GitHat constellation
+
+GitHat is the identity layer. Every app in the platform delegates auth to `api.githat.io`:
+
+| App | Domain | Org |
+|---|---|---|
+| **Sebastn** — Stripe Connect, batteries included | [sebastn.com](https://sebastn.com) | [SebasTN-Rhys](https://github.com/SebasTN-Rhys) |
+| **ClickReserv** — Booking SaaS, 56 templates | [reserv.click](https://reserv.click) | [ClickReserv](https://github.com/ClickReserv) |
+| **Quantl** — ML pipeline + trading platform | [quantl.click](https://quantl.click) | [QuantLinc](https://github.com/QuantLinc) |
+| **Colmado** — Neighborhood commerce | [colmado.click](https://colmado.click) | [Colmado-Inc](https://github.com/Colmado-Inc) |
+| **NFTeria** — Web4 identity + agents | [nfteria.click](https://nfteria.click) | [NFTeria](https://github.com/NFTeria) |
+
+## Get started in 30 seconds
 
 ```bash
 npx create-githat-app my-app
 cd my-app && npm run dev
 ```
 
----
+That's it. You get sign-in, sign-up, password reset, OAuth (Google/GitHub/Apple/Microsoft/Discord/Slack/X), passkeys, 2FA, organizations, audit log — wired up.
 
-### SDK
+## Security posture
 
-```bash
-npm install @githat/nextjs
-```
+- ✅ Verified domain (`githat.io`, `www.githat.io`) — see the badge above
+- ✅ RS256 JWT signing via AWS KMS (no shared secrets between issuer and consumers)
+- ✅ Token verification via public JWKS at `/.well-known/jwks.json` (5-min cache)
+- ✅ Audience claim enforcement per-app (no cross-tenant token replay)
+- ✅ CAA records lock cert issuance to AWS only
+- ✅ SOC 2 CC7.2 audit archive (Object Lock COMPLIANCE 7y)
+- ✅ Required 2FA, signed commits, branch protection, secret scanning
 
-**Components:** `SignInForm` `SignUpForm` `ForgotPasswordForm` `UserButton` `OrgSwitcher`
+## Contact
 
-**Hooks:** `useAuth()` `useData()` `useGitHat()`
-
-**Server:** `verifyToken()` `withAuth()` `getAuth()`
-
-Next.js 14-16 • Middleware/Proxy • Cookie or localStorage • Auto token refresh
-
----
-
-### CLI
-
-```bash
-npx create-githat-app my-app
-```
-
-Next.js 14-16 App Router • Auth pages • Password reset • Dashboard • Team invites • TypeScript + Tailwind
-
----
-
-### Infrastructure
-
-**Frontend:** CloudFront + S3 at githat.io
-
-**API:** api.githat.io — serverless functions
-
-**Database:** DynamoDB
-
-**Email:** SES (noreply@githat.io)
-
-**Monitoring:** CloudWatch (3 alarms)
-
----
-
-### Repositories
-
-- [**MicroFrontEnds**](https://github.com/GitHat-IO/MicroFrontEnds) — Dashboard, SDK, frontend
-- [**MicroBackEnds**](https://github.com/GitHat-IO/MicroBackEnds) — Lambda API, DynamoDB
-- [**create-githat-app**](https://github.com/GitHat-IO/create-githat-app) — CLI (npm)
-
----
-
----
-
-### Documentation
-
-[Quick Start](https://githat.io/docs/quickstart) •
-[SDK Reference](https://githat.io/docs/sdk) •
-[API Reference](https://githat.io/docs/api) •
-[CLI](https://githat.io/docs/cli) •
-[AI Agents](https://githat.io/docs/agents) •
-[BYOD](https://githat.io/docs/byod) •
-[Customer Data API](https://githat.io/docs/data) •
-[Skills Marketplace](https://githat.io/docs/skills)
-
-**Framework Guides:**
-[Next.js](https://githat.io/docs/nextjs) •
-[React](https://githat.io/docs/react) •
-[Node.js](https://githat.io/docs/node) •
-[Python](https://githat.io/docs/python) •
-[Flask](https://githat.io/docs/flask) •
-[FastAPI](https://githat.io/docs/fastapi)
-
-**Tutorials:**
-[Next.js Auth Guide](https://githat.io/guides/nextjs-authentication) •
-[React Auth Guide](https://githat.io/guides/react-authentication) •
-[Node.js Auth Guide](https://githat.io/guides/node-authentication) •
-[Multi-Tenant Auth](https://githat.io/guides/multi-tenant-auth) •
-[Clerk Migration](https://githat.io/docs/clerk-migration)
-
-**Compare:**
-[vs Clerk](https://githat.io/compare/githat-vs-clerk) •
-[vs Auth0](https://githat.io/compare/githat-vs-auth0) •
-[vs Firebase](https://githat.io/compare/githat-vs-firebase) •
-[vs Supabase](https://githat.io/compare/githat-vs-supabase) •
-[vs Vercel](https://githat.io/compare/githat-vs-vercel)
-
----
-
-<div align="center">
-
-[Website](https://githat.io) • [Pricing](https://githat.io/pricing) • [Docs](https://githat.io/docs) • [SDK](https://www.npmjs.com/package/@githat/nextjs) • [CLI](https://www.npmjs.com/package/create-githat-app)
-
-© 2026 GitHat Inc.
-
-</div>
+Security: [security@githat.io](mailto:security@githat.io) — see [SECURITY.md](https://github.com/GitHat-IO/.github/blob/main/SECURITY.md)
+Support: [hello@githat.io](mailto:hello@githat.io)
+Status: [status.githat.io](https://status.githat.io)
