@@ -25,6 +25,7 @@ One install. Sign-in, sign-up, password reset, social, passkeys, 2FA, organizati
 
 GitHat is the identity layer. Every app in the platform delegates auth to `api.githat.io`:
 
+<!-- IDENTITY:fleet_table -->
 | App | Domain | Org |
 |---|---|---|
 | **Sebastn** — payments rail | [sebastn.com](https://sebastn.com) | [SebasTN-Rhys](https://github.com/SebasTN-Rhys) |
@@ -32,6 +33,7 @@ GitHat is the identity layer. Every app in the platform delegates auth to `api.g
 | **Quantl** — quant signals + forecasting | [quantl.click](https://quantl.click) | [QuantLinc](https://github.com/QuantLinc) |
 | **Colmado** — neighborhood commerce | [colmado.click](https://colmado.click) | [Colmado-Inc](https://github.com/Colmado-Inc) |
 | **NFTeria** — web4 identity + agents | [nfteria.click](https://nfteria.click) | [NFTeria](https://github.com/NFTeria) |
+<!-- /IDENTITY:fleet_table -->
 
 ## Get started
 
