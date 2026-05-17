@@ -26,13 +26,13 @@ One install. Sign-in, sign-up, password reset, social, passkeys, 2FA, organizati
 GitHat is the identity layer. Every app in the platform delegates auth to `api.githat.io`:
 
 <!-- IDENTITY:fleet_table -->
-| App | Domain | Org |
+| App | Domain | Role |
 |---|---|---|
-| **Sebastn** — payments rail | [sebastn.com](https://sebastn.com) | [SebasTN-Rhys](https://github.com/SebasTN-Rhys) |
-| **ClickReserv** — booking SaaS, 56 templates | [reserv.click](https://reserv.click) | [ClickReserv](https://github.com/ClickReserv) |
-| **Quantl** — quant signals + forecasting | [quantl.click](https://quantl.click) | [QuantLinc](https://github.com/QuantLinc) |
-| **Colmado** — neighborhood commerce | [colmado.click](https://colmado.click) | [Colmado-Inc](https://github.com/Colmado-Inc) |
-| **NFTeria** — web4 identity + agents | [nfteria.click](https://nfteria.click) | [NFTeria](https://github.com/NFTeria) |
+| **GitHat** | [githat.io](https://githat.io) | Identity layer for the fleet |
+| **Sebastn** | [sebastn.com](https://sebastn.com) | Payments rail |
+| **ClickReserv** | [reserv.click](https://reserv.click) | Multi-tenant booking SaaS |
+| **Quantl** | [quantl.click](https://quantl.click) | Quant signals + forecasting |
+| **Colmado** | [colmado.click](https://colmado.click) | Neighborhood commerce |
 <!-- /IDENTITY:fleet_table -->
 
 ## Get started
